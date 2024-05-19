@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="check-in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="check-in.Designer.cs">
+      <DependentUpon>check-in.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConectDB.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="check-in.resx">
+      <DependentUpon>check-in.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
